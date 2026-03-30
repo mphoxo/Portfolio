@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Animated on Scroll(AOS) Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons (Bootstrap Icons) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <title>Home</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold" href="#">
+      Mpho Ngwenya
+    </a>
+
+    <!-- Mobile toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="#home">
+            <i class="bi bi-house-door"></i> Home
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bi bi-lightning-charge"></i> Skills
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bi bi-code-slash"></i> Projects
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bi bi-mortarboard"></i> Education
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bi bi-person"></i> About
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">
+            <i class="bi bi-envelope"></i> Contact
+            </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO / WELCOME SECTION -->
+<section class="hero-section d-flex align-items-center">
+  <div class="container">
+    <div class="glass-card p-4 p-lg-5" data-aos="fade-up">
+
+      <div class="row align-items-center">
+
+        <!-- Left: Image -->
+        <div class="col-md-4 text-center mb-4 mb-md-0" data-aos="fade-right">
+          <img src="/image/IMG-20250317-WA0022.jpg" class="profile-img img-fluid" alt="My Photo">
+        </div>
+
+        <!-- Right: Text -->
+        <div class="col-md-8 text-white" data-aos="fade-left">
+          <h2 class="fw-bold">Hi, I'm Mpho 👋</h2>
+          <h5 class="typing-subtitle mt-2">
+            <span id="typing"></span>
+          </h5>
+          <p class="lead">
+            I'm passionate about building solutions in networking, IoT, and software development.
+            I enjoy working with ESP32, Flask, and solving real-world problems through code.
+          </p>
+          <a href="#" class="btn btn-primary">Download CV</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5">
+  <div class="container">
+  <div class="skills-card p-4 p-lg-5">
+    <h2 class="text-center mb-5 fw-bold">Skills</h2>
+    <!-- Programming Skills -->
+    <h4 class="mb-4">Programming</h4>
+
+    <!-- Skill Item(C++) -->
+    <div class="row align-items-center mb-4" data-aos="fade-up">
+      <!-- Left: Icon + Name -->
+      <div class="col-4 col-md-3 d-flex align-items-center">
+        <i class="devicon-cplusplus-plain colored me-2 fs-3"></i>
+        <span class="fw-semibold">C++</span>
+      </div>
+      <!-- Right: Progress Bar -->
+      <div class="col-8 col-md-9">
+        <div class="progress" style="height: 10px;">
+          <div class="progress-bar" data-progress="85">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill Item(Python) -->
+    <div class="row align-items-center mb-4" data-aos="fade-up">
+      <!-- Left: Icon + Name -->
+      <div class="col-4 col-md-3 d-flex align-items-center">
+        <i class="devicon-python-plain colored me-2 fs-3"></i>
+        <span class="fw-semibold">Python</span>
+      </div>
+      <!-- Right: Progress Bar -->
+      <div class="col-8 col-md-9">
+        <div class="progress" style="height: 10px;">
+          <div class="progress-bar" data-progress="95">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill Item(HTML) -->
+    <div class="row align-items-center mb-4" data-aos="fade-up">
+      <!-- Left: Icon + Name -->
+      <div class="col-4 col-md-3 d-flex align-items-center">
+        <i class="devicon-html5-plain colored me-2 fs-3"></i>
+        <span class="fw-semibold">HTML</span>
+      </div>
+      <!-- Right: Progress Bar -->
+      <div class="col-8 col-md-9">
+        <div class="progress" style="height: 10px;">
+          <div class="progress-bar" data-progress="75">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill Item(CSS) -->
+    <div class="row align-items-center mb-4" data-aos="fade-up">
+      <!-- Left: Icon + Name -->
+      <div class="col-4 col-md-3 d-flex align-items-center">
+        <i class="devicon-css3-plain colored me-2 fs-3"></i>
+        <span class="fw-semibold">CSS</span>
+      </div>
+      <!-- Right: Progress Bar -->
+      <div class="col-8 col-md-9">
+        <div class="progress" style="height: 10px;">
+          <div class="progress-bar" data-progress="80">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Project Section -->
+<div class="container mt-5">
+
+  <div class="row g-4">
+
+    <!-- Card 1 -->
+    <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+      <div class="card h-100">
+        <img src="/image/Project1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Phone to Speaker</h5>
+          <p class="card-text">A speaker that produces sound using transistor multistage circuit.</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+      <div class="card h-100">
+        <img src="/image/Project1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Project 2</h5>
+          <p class="card-text">Description here...</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+      <div class="card h-100">
+        <img src="/image/Project1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Project 3</h5>
+          <p class="card-text">Description here...</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+      <div class="card h-100">
+        <img src="/image/Project1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Project 4</h5>
+          <p class="card-text">Description here...</p>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Typing Subtitle JS -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,   // animation speed
+    once: true        // only animate once
+  });
+</script>
+
+<!--Progress Bar -->
+<script>
+  const skillSection = document.querySelector("#skills");
+  const progressBars = document.querySelectorAll(".progress-bar");
+
+  let started = false;
+
+  window.addEventListener("scroll", () => {
+    const sectionTop = skillSection.offsetTop - 300;
+
+    if (window.scrollY >= sectionTop && !started) {
+      progressBars.forEach(bar => {
+        let value = bar.getAttribute("data-progress");
+        bar.style.width = value + "%";
+      });
+
+      started = true; // run only once
+    }
+  });
+</script>
+
+<!-- Typing text -->
+<script>
+  var typed = new Typed("#typing", {
+    strings: [
+      "IoT Systems",
+      "Data Science", 
+      "Full Stack Developer",
+      "Network Configuration",
+
+    ],
+    typeSpeed: 40,
+    backSpeed: 20,
+    loop: true
+  });
+</script>
+</body>
+</html>

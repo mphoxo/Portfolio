@@ -1,0 +1,158 @@
+body {
+    padding-top: 40px;
+}
+/* Smooth hover effect */
+.nav-link {
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.nav-link:hover {
+    color: #0d6efd !important;
+    transform: translateY(-2px);
+}
+
+/* Active link highlight */
+.nav-link.active {
+    color: #0d6efd !important;
+    font-weight: bold;
+}
+
+/* Navbar shadow upgrade */
+.navbar {
+    backdrop-filter: blur(10px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+/* HERO BACKGROUND */
+.hero-section {
+    min-height: 90vh;
+
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    /* tech feel gradient */
+
+    display: flex;
+    align-items: center;
+}
+
+/* GLASS EFFECT */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+/* TEXT IMPROVEMENT */
+.hero-section h2 {
+    font-size: 2.5rem;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+}
+
+.hero-section {
+    min-height: 90vh;
+
+    background: linear-gradient(135deg, #141e30, #243b55);
+    position: relative;
+    overflow: hidden;
+}
+.typing-subtitle {
+    color: #6c757d; /* soft gray */
+    font-weight: 500;
+    min-height: 30px; /* prevents jumping */
+}
+
+.typing-subtitle span {
+    color: #ffffff; /* accent color */
+}
+/* subtle animated glow */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(0, 123, 255, 0.3);
+    border-radius: 50%;
+    top: -100px;
+    left: -100px;
+    filter: blur(100px);
+}
+
+/* Skills */
+/*Smooth progress bar look */
+.progress {
+    background-color: #e9ecef;
+    border-radius: 50px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0;
+    border-radius: 50px;
+    transition: width 1.5s ease-in-out;
+
+    /* subtle gradient */
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+}
+/* Devicon size + alignment */
+#skills{
+    background: #e6e6e6;
+}
+.skills-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+#skills i {
+    font-size: 2rem;
+}
+
+/* Slight hover effect */
+#skills i:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+/* Skill row hover effect */
+#skills .row:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+#skills .row {
+    padding: 10px 5px;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+
+#skills .row:hover {
+    background: rgba(0,0,0,0.03);
+    transform: translateY(-2px);
+}
