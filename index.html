@@ -21,6 +21,9 @@
 
     <title>Home</title>
 </head>
+<div id="loader">
+  <div class="spinner"></div>
+</div>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">  <div class="container-fluid">
@@ -43,7 +46,7 @@
             </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="Skills.html">
             <i class="bi bi-lightning-charge"></i> Skills
           </a>
         </li>
@@ -110,9 +113,9 @@
 <section id="skills" class="py-5">
   <div class="container">
   <div class="skills-card p-4 p-lg-5">
-    <h2 class="text-center mb-5 fw-bold">Skills</h2>
+    <h2 class="text-center mb-5 fw-bold">Soft Skills</h2>
     <!-- Programming Skills -->
-    <h4 class="mb-4">Programming</h4>
+    <!--<h4 class="mb-4">Soft Skills</h4>-->
 
     <!-- Skill Item(C++) -->
     <div class="row align-items-center mb-4" data-aos="fade-up">
@@ -146,6 +149,22 @@
       </div>
     </div>
 
+    <!-- Skill Item(Flask) -->
+    <div class="row align-items-center mb-4" data-aos="fade-up">
+      <!-- Left: Icon + Name -->
+      <div class="col-4 col-md-3 d-flex align-items-center">
+        <i class="devicon-flask-plain colored me-2 fs-3"></i>
+        <span class="fw-semibold">Flask Framework</span>
+      </div>
+      <!-- Right: Progress Bar -->
+      <div class="col-8 col-md-9">
+        <div class="progress" style="height: 10px;">
+          <div class="progress-bar" data-progress="95">
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Skill Item(HTML) -->
     <div class="row align-items-center mb-4" data-aos="fade-up">
       <!-- Left: Icon + Name -->
@@ -156,7 +175,7 @@
       <!-- Right: Progress Bar -->
       <div class="col-8 col-md-9">
         <div class="progress" style="height: 10px;">
-          <div class="progress-bar" data-progress="75">
+          <div class="progress-bar" data-progress="90">
           </div>
         </div>
       </div>
@@ -177,19 +196,84 @@
         </div>
       </div>
     </div>
+
+    <!-- Skill Item(SQL) -->
+    <div class="row align-items-center mb-4" data-aos="fade-up">
+      <!-- Left: Icon + Name -->
+      <div class="col-4 col-md-3 d-flex align-items-center">
+        <i class="devicon-mysql-plain colored me-2 fs-3"></i>
+        <span class="fw-semibold">SQL</span>
+      </div>
+      <!-- Right: Progress Bar -->
+      <div class="col-8 col-md-9">
+        <div class="progress" style="height: 10px;">
+          <div class="progress-bar" data-progress="85">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill Item(MATLAB) -->
+    <div class="row align-items-center mb-4" data-aos="fade-up">
+      <!-- Left: Icon + Name -->
+      <div class="col-4 col-md-3 d-flex align-items-center">
+        <i class="devicon-matlab-plain colored me-2 fs-3"></i>
+        <span class="fw-semibold">MATLAB</span>
+      </div>
+      <!-- Right: Progress Bar -->
+      <div class="col-8 col-md-9">
+        <div class="progress" style="height: 10px;">
+          <div class="progress-bar" data-progress="75">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill Item(Arduino) -->
+    <div class="row align-items-center mb-4" data-aos="fade-up">
+      <!-- Left: Icon + Name -->
+      <div class="col-4 col-md-3 d-flex align-items-center">
+        <i class="devicon-arduino-plain colored me-2 fs-3"></i>
+        <span class="fw-semibold">Arduino</span>
+      </div>
+      <!-- Right: Progress Bar -->
+      <div class="col-8 col-md-9">
+        <div class="progress" style="height: 10px;">
+          <div class="progress-bar" data-progress="87">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill Item(Ubuntu) -->
+    <div class="row align-items-center mb-4" data-aos="fade-up">
+      <!-- Left: Icon + Name -->
+      <div class="col-4 col-md-3 d-flex align-items-center">
+        <i class="devicon-ubuntu-plain colored me-2 fs-3"></i>
+        <span class="fw-semibold">Ubuntu</span>
+      </div>
+      <!-- Right: Progress Bar -->
+      <div class="col-8 col-md-9">
+        <div class="progress" style="height: 10px;">
+          <div class="progress-bar" data-progress="87">
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 </section>
 
 <!-- Project Section -->
 <div class="container mt-5">
-    <h2 class="text-center mb-5 fw-bold">Projects</h2>
+  <h2 class="text-center mb-5 fw-bold">Projects</h2>
   <div class="row g-4">
 
     <!-- Card 1 -->
     <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
       <div class="card h-100">
-        <img src="image/Project1.jpg" class="card-img-top" alt="...">
+        <img src="image/Phone-to-Speaker-Project.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Phone to Speaker</h5>
           <p class="card-text">A speaker that produces sound using transistor multistage circuit.</p>
@@ -201,10 +285,10 @@
     <!-- Card 2 -->
     <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
       <div class="card h-100">
-        <img src="image/Project1.jpg" class="card-img-top" alt="...">
+        <img src="image/TrafficLight-Project.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Project 2</h5>
-          <p class="card-text">Description here...</p>
+          <h5 class="card-title">Traffic Light System</h5>
+          <p class="card-text">A traffic light system that simulates real-world signal operation using an Arduino</p>
           <a href="#" class="btn btn-primary">View Project</a>
         </div>
       </div>
@@ -213,10 +297,10 @@
     <!-- Card 3 -->
     <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
       <div class="card h-100">
-        <img src="image/Project1.jpg" class="card-img-top" alt="...">
+        <img src="image/Ultrasonic-Project.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Project 3</h5>
-          <p class="card-text">Description here...</p>
+          <h5 class="card-title">Water Level Sensor</h5>
+          <p class="card-text">A water level sensor that uses an ultrasonic sensor for real-time measurement.</p>
           <a href="#" class="btn btn-primary">View Project</a>
         </div>
       </div>
