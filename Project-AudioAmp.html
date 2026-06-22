@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Amplifier — Mpho Ngwenya</title>
+</head>
+<body>
+
+    <!-- Top bar -->
+    <div class="detail-topbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html#projects" class="back-link"><i class="bi bi-arrow-left"></i> ~/projects</a>
+            <span class="fw-bold" style="color: var(--accent-magenta); text-shadow: 0 0 12px var(--glow-magenta);">Mpho Ngwenya</span>
+        </div>
+    </div>
+
+    <div class="container py-5">
+
+        <!-- Hero -->
+        <div class="detail-hero mb-5" data-aos="fade-up">
+            <div class="detail-hero-header">
+                <span class="terminal-dot magenta"></span>
+                <span class="terminal-dot cyan"></span>
+                <span class="terminal-dot dim"></span>
+                <span class="project-path">~/projects/music-amplifier/README.md</span>
+            </div>
+            <div class="p-4 p-md-5">
+                <span class="role-badge mb-3 d-inline-block">TEAM PROJECT</span>
+                <h1 class="fw-bold mb-3" style="color: var(--text-primary); font-size: 2.2rem;">
+                    Music Amplifier — Cellphone to Speaker
+                </h1>
+                <p style="color: var(--text-muted); font-size: 1.05rem; max-width: 700px;">
+                    A six-stage transistor amplifier that takes a weak signal from a cellphone's headphone jack, buffers and boosts it through a common-collector stage and an LM386 IC, then drives a speaker with adjustable volume control.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                    <span class="tech-tag">LM386 IC</span>
+                    <span class="tech-tag">2N3904 Transistor</span>
+                    <span class="tech-tag">Multisim</span>
+                    <span class="tech-tag">SMath Studio</span>
+                    <span class="tech-tag">PCB Design</span>
+                    <span class="tech-tag">3.5mm Audio Jack</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overview -->
+        <div class="row mb-5" data-aos="fade-up">
+            <div class="col-lg-8">
+                <p class="section-label">Overview</p>
+                <p style="color: var(--text-muted); font-size: 0.98rem; line-height: 1.7;">
+                    Amplified audio is essential for things like playing music to a group, making announcements, or boosting voice communication — but a phone or human voice alone can't drive a speaker directly; the signal is far too weak. This project solves that with a transistor amplifier circuit built around the LM386, a low-voltage audio amplifier IC that delivers solid gain with very few external components.
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.98rem; line-height: 1.7;">
+                    The signal is captured from a cellphone via a 3.5 mm aux cable, switched on through a simple SPDT power control, buffered by a common-collector (2N3904) stage for clean impedance matching, amplified by the LM386, passed through a potentiometer for manual volume control, and finally delivered to a 4Ω speaker.
+                </p>
+            </div>
+        </div>
+
+        <!-- Signal Flow -->
+        <div class="mb-5" data-aos="fade-up">
+            <p class="section-label">Signal Flow</p>
+            <div class="row g-2">
+                <div class="col">
+                    <div class="node-box">Cellphone<br>Audio Input</div>
+                </div>
+                <div class="col">
+                    <div class="node-box">ON/OFF Switch<br>Power Control</div>
+                </div>
+                <div class="col">
+                    <div class="node-box">Common-Collector<br>Input Buffer</div>
+                </div>
+                <div class="col">
+                    <div class="node-box">LM386<br>Amplification</div>
+                </div>
+                <div class="col">
+                    <div class="node-box">Potentiometer<br>Volume Control</div>
+                </div>
+                <div class="col">
+                    <div class="node-box">Speaker<br>Output</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- System Components -->
+        <div class="mb-5" data-aos="fade-up">
+            <p class="section-label">System Components</p>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-4">
+                    <div class="component-card">
+                        <h6>3.5mm Audio Jack — Audio Input</h6>
+                        <p>Captures the weak audio signal directly from the cellphone's headphone port, serving as the input to the amplifier system.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="component-card">
+                        <h6>SPDT Switch — Power Control</h6>
+                        <p>A simple ON/OFF switch integrated into the circuit to safely control power delivery to the amplifier.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="component-card">
+                        <h6>2N3904 Transistor — Input Buffer</h6>
+                        <p>Configured as a common-collector (emitter-follower) buffer, providing high input impedance so the phone's signal isn't loaded down, while delivering the low output impedance the LM386 needs to be driven efficiently.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="component-card">
+                        <h6>LM386 Audio Amplifier IC</h6>
+                        <p>The core amplification stage — boosts the buffered signal from the millivolt range up to a level strong enough to drive the loudspeaker without significant distortion.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="component-card">
+                        <h6>Potentiometer (5kΩ / 100kΩ) — Volume Control</h6>
+                        <p>Acts as a variable resistor at the amplifier's output, letting the user manually adjust the loudness of the speaker.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="component-card">
+                        <h6>Speaker (4Ω, 0.25W) — Output</h6>
+                        <p>Converts the amplified electrical signal back into audible sound, completing the signal chain.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Circuit Design & Final Prototype -->
+        <div class="mb-5" data-aos="fade-up">
+            <p class="section-label">Circuit Design &amp; Final Prototype</p>
+
+            <p style="color: var(--text-muted); font-size: 0.88rem;">Circuit schematic verified through Multisim simulation and SMath Studio calculations before physical construction.</p>
+            <img src="/AudioSchema.jpeg" alt="Schematic Diagram of the Circuit" class="schematic-img mb-4" loading="lazy">
+
+            <p style="color: var(--text-muted); font-size: 0.88rem;">Breadboard prototype, internal PCB build, and the final enclosed amplifier.</p>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <img src="/AudioBreadboard.jpeg" alt="Breadboard Prototype Circuit" class="prototype-img" loading="lazy">
+                </div>
+                <div class="col-md-6">
+                    <img src="/PCBDesign.jpeg" alt="Internal View of Circuit Mounted on PCB" class="prototype-img" loading="lazy">
+                </div>
+                <div class="col-md-6">
+                    <img src="/enclosure.jpeg" alt="Completed Amplifier Enclosed in Container" class="prototype-img" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <!-- My Contribution -->
+        <div class="row mb-5" data-aos="fade-up">
+            <div class="col-lg-8">
+                <p class="section-label">My Contribution</p>
+                <p style="color: var(--text-muted); font-size: 0.98rem; line-height: 1.7;">
+                    This was a two-person project with Munyai S. My contribution covered the <strong style="color: var(--text-primary);">Audio Input Stage</strong> (3.5mm jack interfacing), the <strong style="color: var(--text-primary);">Power Control stage</strong> (ON/OFF switch), and the <strong style="color: var(--text-primary);">Input Buffer stage</strong> — a common-collector (emitter-follower) configuration built around a 2N3904 transistor, giving the circuit high input impedance so the phone's output isn't loaded down, while delivering the low output impedance the LM386 needs to be driven cleanly. Munyai S built the Audio Amplification (LM386), Volume Control, and Output (Speaker) stages.
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.98rem; line-height: 1.7;">
+                    Together, we verified the design using Multisim for circuit simulation and SMath Studio for the supporting calculations before moving to breadboard construction.
+                </p>
+            </div>
+        </div>
+
+        <!-- Challenges -->
+        <div class="mb-5" data-aos="fade-up">
+            <p class="section-label">Technical Challenges &amp; Fixes</p>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="log-entry">
+                        <span class="log-tag-error">ERROR:</span> Hard-to-source components<br>
+                        <span style="color: var(--text-muted);">Cause: some parts weren't available locally, and others underperformed once tested.</span><br>
+                        <span class="log-tag-fixed">RESOLVED:</span> <span style="color: var(--text-muted);">sourced from Swift Electronics, exchanging and replacing faulty parts as needed.</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="log-entry">
+                        <span class="log-tag-error">ERROR:</span> Initial push-pull amplifier design fell short<br>
+                        <span style="color: var(--text-muted);">Cause: combined common-emitter/common-collector stages caused power losses through wiring and an oversized layout.</span><br>
+                        <span class="log-tag-fixed">RESOLVED:</span> <span style="color: var(--text-muted);">redesigned around a single common-collector buffer feeding directly into the LM386 IC.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results / Demo -->
+        <div class="mb-5" data-aos="fade-up">
+            <p class="section-label">Results &amp; Demo</p>
+             <p style="color: var(--text-muted); font-size: 0.88rem;">Calculated values compared against simulated and measured results.</p>
+            <table class="tech-table">
+                <thead>
+                    <tr><th>Parameter</th><th>Calculated</th><th>Simulated</th><th>Measured</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>f<sub>c</sub> (cutoff frequency)</td><td>19.894 Hz</td><td>—</td><td>—</td></tr>
+                    <tr><td>X<sub>c</sub> (capacitive reactance)</td><td>8 Ω</td><td>—</td><td>—</td></tr>
+                    <tr><td>V<sub>in</sub> (RMS)</td><td>48.2 mV</td><td>48.2 mV</td><td>32.4 mV</td></tr>
+                    <tr><td>V<sub>speaker</sub> (RMS)</td><td>0.964 V</td><td>1.2 V</td><td>0.76 V</td></tr>
+                    <tr><td>I<sub>speaker</sub> (RMS)</td><td>241 mA</td><td>—</td><td>183.2 mA</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Footer nav -->
+        <div class="text-center py-4" data-aos="fade-up">
+            <a href="index.html#projects" class="doc-link-btn"><i class="bi bi-arrow-left"></i> Back to Projects</a>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>ESP32 Smart Irrigation — Mpho Ngwenya</title>
+</head>
+<body>
+
+    <!-- Top bar -->
+    <div class="detail-topbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html#projects" class="back-link"><i class="bi bi-arrow-left"></i> ~/projects</a>
+            <span class="fw-bold" style="color: var(--accent-magenta); text-shadow: 0 0 12px var(--glow-magenta);">Mpho Ngwenya</span>
+        </div>
+    </div>
+
+    <div class="container py-5">
+
+        <!-- Hero -->
+        <div class="detail-hero mb-5" data-aos="fade-up">
+            <div class="detail-hero-header">
+                <span class="terminal-dot magenta"></span>
+                <span class="terminal-dot cyan"></span>
+                <span class="terminal-dot dim"></span>
+                <span class="project-path">~/projects/smart-irrigation/README.md</span>
+            </div>
+            <div class="p-4 p-md-5">
+                <span class="role-badge mb-3 d-inline-block">TEAM PROJECT</span>
+                <span class="role-badge mb-3 d-inline-block ms-2" style="border-color: var(--accent-cyan); color: var(--accent-cyan);">90% — FINAL GRADE</span>
+                <h1 class="fw-bold mb-3" style="color: var(--text-primary); font-size: 2.2rem;">
+                    ESP32 Smart Irrigation Monitoring &amp; Control System
+                </h1>
+                <p style="color: var(--text-muted); font-size: 1.05rem; max-width: 700px;">
+                    A five-node IoT network that monitors soil and environmental conditions in real time and gives growers role-based control over irrigation, instead of watering on a fixed schedule.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                    <span class="tech-tag">ESP32</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Arduino C/C++</span>
+                    <span class="tech-tag">Soil Moisture Sensor</span>
+                    <span class="tech-tag">Ultrasonic Sensor</span>
+                    <span class="tech-tag">DHT22 Sensor</span>
+                    <span class="tech-tag">PIR Motion Sensor</span>
+                    <span class="tech-tag">Rainfall Sensor</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overview -->
+        <div class="row mb-5" data-aos="fade-up">
+            <div class="col-lg-8">
+                <p class="section-label">Overview</p>
+                <p style="color: var(--text-muted); font-size: 0.98rem; line-height: 1.7;">
+                    Agriculture is a major driver of food security and economic growth across Africa, but most farms still rely on manual, imprecise irrigation. Without real-time visibility into soil and weather conditions, farmers either over-water — wasting a scarce resource — or under-water during dry spells, hurting crop yield. This is most visible in rural and semi-urban farms with limited access to modern monitoring technology.
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.98rem; line-height: 1.7;">
+                    This project addresses that with a five-node ESP32 sensor network measuring soil moisture, temperature, humidity, rainfall, and tank water level, feeding into a Flask + MySQL backend. A role-based web dashboard turns that data into irrigation decisions in real time, replacing guesswork with measurement.
+                </p>
+            </div>
+        </div>
+
+        <!-- Architecture -->
+        <div class="mb-5" data-aos="fade-up">
+            <p class="section-label">System Architecture</p>
+            <div class="row g-2 mb-2">
+                <div class="col">
+                    <div class="node-box">Node 1<br>DHT22<br>Temp &amp; Humidity</div>
+                </div>
+                <div class="col">
+                    <div class="node-box">Node 2<br>Ultrasonic<br>Water Level</div>
+                </div>
+                <div class="col">
+                    <div class="node-box">Node 3<br>Soil Moisture Sensor</div>
+                </div>
+                <div class="col">
+                    <div class="node-box">Node 4<br>Rainfall Sensor</div>
+                </div>
+                <div class="col">
+                    <div class="node-box">Node 5<br>PIR Motion</div>
+                </div>
+            </div>
+            <div class="flow-arrow"><i class="bi bi-arrow-down"></i></div>
+            <div class="row justify-content-center mb-2">
+                <div class="col-md-4">
+                    <div class="node-box highlight">Flask + MySQL Server</div>
+                </div>
+            </div>
+            <div class="flow-arrow"><i class="bi bi-arrow-down"></i></div>
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-4">
+                    <div class="node-box highlight">Role-Based Web Dashboard</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- System Components -->
+        <div class="mb-5" data-aos="fade-up">
+            <p class="section-label">System Components</p>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-4">
+                    <div class="component-card">
+                        <img src="/dht22-sensor.jpeg" alt="DHT22 Temperature and Humidity Sensor" class="component-img" loading="lazy">
+                        <h6>Node 1 — DHT22 Temperature &amp; Humidity</h6>
+                        <p>The DHT22 sensor measures temperature and humidity of the farm environment to effectively manage soil, water and support irrigation decisions. The sensor uses a capacitive humidity sensor to detect changes in moisture levels in the air, and an NTC thermistor to measure temperature based on variations in electrical resistance.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="component-card">
+                        <img src="/ultrasonic-sensor.jpeg" alt="HC-SR04 Ultrasonic Sensor" class="component-img" loading="lazy">
+                        <h6>Node 2 — Ultrasonic Water Level</h6>
+                        <p>The ultrasonic sensor measures distance using sound waves, where a pulse is emitted by the trigger pin, travels through air, reflects off the surface of the object, and is then captured by the echo pin. It works by sending ultrasonic waves from its transmitter, which bounce off the surface of the water and return as an echo to the receiver.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="component-card">
+                        <img src="/moisture-sensor.jpeg" alt="Resistive Soil Moisture Sensor" class="component-img" loading="lazy">
+                        <h6>Node 3 — Soil Moisture Sensor</h6>
+                        <p>The soil moisture sensor works using two conductive probes that detect changes in resistance based on soil moisture. These variations are converted into voltages and mapped into percentage values, acting as the primary irrigation trigger — when moisture drops below a set threshold, the system activates watering. The soil moisture sensor is a key component that primarily defines the irrigation process.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="component-card">
+                        <img src="/rainfall-sensor.jpeg" alt="Resistive Rainfall Sensor" class="component-img" loading="lazy">
+                        <h6>Node 4 — Rainfall Sensor</h6>
+                        <p>The rainfall sensor is responsible for measuring the presence of rainfall, which is essential to managing the irrigation process. This resistive rainfall sensor consists of a conduction board. When water lands on the sensor board, it conducts electricity between these traces, causing changes in resistance which is then converted into a voltage signal read by the ESP32 via an analog pin.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="component-card">
+                        <img src="/PIR-sensor.jpeg" alt="PIR Motion Sensor" class="component-img" loading="lazy">
+                        <h6>Node 5 — PIR Motion Sensor</h6>
+                        <p>The motion sensor is implemented to detect the presence of humans or farmers in the field before automatic irrigation is triggered, for safety. It uses infrared radiation heat emitted by warm bodies, and produces a HIGH/LOW digital output based on whether motion is detected.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Circuit Design & Final Prototype -->
+        <div class="mb-5" data-aos="fade-up">
+            <p class="section-label">Circuit Design &amp; Final Prototype</p>
+
+            <p style="color: var(--text-muted); font-size: 0.88rem;">Full circuit schematic showing all five ESP32 nodes and their sensor connections.</p>
+            <img src="/Circuit_Schematic.png" alt="Main Circuit Design Sketch" class="schematic-img mb-4" loading="lazy">
+
+            <p style="color: var(--text-muted); font-size: 0.88rem;">Final assembled prototype — wired nodes, enclosure, farm bed, and water tank.</p>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <img src="/WorkingPrototype.jpeg" alt="Five wired ESP32 nodes" class="prototype-img" loading="lazy">
+                </div>
+                <div class="col-md-4">
+                    <img src="/topView.jpeg" alt="Enclosure top view with farm and tank" class="prototype-img" loading="lazy">
+                </div>
+                <div class="col-md-4">
+                    <img src="/sideView.jpeg" alt="Enclosure side view with wiring" class="prototype-img" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <!-- Challenges -->
+        <div class="mb-5" data-aos="fade-up">
+            <p class="section-label">Technical Challenges &amp; Fixes</p>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="log-entry">
+                        <span class="log-tag-error">ERROR:</span> Nodes intermittently dropping Wi-Fi<br>
+                        <span style="color: var(--text-muted);">Cause: high traffic when all five nodes transmitted at once.</span><br>
+                        <span class="log-tag-fixed">RESOLVED:</span> <span style="color: var(--text-muted);">staggered each node's transmission interval.</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="log-entry">
+                        <span class="log-tag-error">ERROR:</span> NULL values appearing in the database<br>
+                        <span style="color: var(--text-muted);">Cause: sensor readings occasionally lost before reaching Flask.</span><br>
+                        <span class="log-tag-fixed">RESOLVED:</span> <span style="color: var(--text-muted);">only insert a row once a valid reading is actually received.</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="log-entry">
+                        <span class="log-tag-error">ERROR:</span> Wiring shorting during testing<br>
+                        <span style="color: var(--text-muted);">Cause: loose jumper wires shifting and touching on small vibrations.</span><br>
+                        <span class="log-tag-fixed">RESOLVED:</span> <span style="color: var(--text-muted);">securely mounted and routed wiring along the enclosure edge.</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="log-entry">
+                        <span class="log-tag-error">ERROR:</span> Query performance degrading over time<br>
+                        <span style="color: var(--text-muted);">Cause: five sensor tables accumulating rows indefinitely.</span><br>
+                        <span class="log-tag-fixed">RESOLVED:</span> <span style="color: var(--text-muted);">scheduled SQL cleanup query dropping rows past a set age.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results / Demo -->
+        <div class="mb-5" data-aos="fade-up">
+            <p class="section-label">Results &amp; Demo</p>
+
+            <p style="color: var(--text-muted); font-size: 0.88rem;">Home page — choose Administrator or Farmer login.</p>
+            <img src="/homeWeb.jpeg" alt="Home Page" class="schematic-img mb-4" loading="lazy">
+
+            <p style="color: var(--text-muted); font-size: 0.88rem;">Farmer login for role-based monitoring.</p>
+            <img src="/loginWeb.jpeg" alt="Farmer Login Page" class="schematic-img mb-4" loading="lazy">
+
+            <p style="color: var(--text-muted); font-size: 0.88rem;">Administrator login to monitor and control all sensor readings.</p>
+            <img src="/adminloginWeb.jpeg" alt="Administrator Login Page" class="schematic-img mb-4" loading="lazy">
+
+            <p style="color: var(--text-muted); font-size: 0.88rem;">Administrator dashboard.</p>
+            <img src="/adminDashWeb.jpeg" alt="Administrator Dashboard" class="schematic-img mb-4" loading="lazy">
+
+            <p style="color: var(--text-muted); font-size: 0.88rem;">Live sensor reading.</p>
+            <img src="/LiveRaadingWeb.jpeg" alt="Live Sensor Reading" class="schematic-img" loading="lazy">
+        </div>
+
+        <!-- Documentation -->
+        <div class="mb-5" data-aos="fade-up">
+            <p class="section-label">Documentation</p>
+            <div class="d-flex flex-wrap gap-3">
+                <a href="/Mpho_Ngwenya_GA_Project.pdf" class="doc-link-btn" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf"></i> Full Report (PDF)</a>
+                <a href="https://github.com/mphoxo/ESP32-Smart-Irrigation-Monitoring-Control-System" class="doc-link-btn" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> GitHub Repo</a>
+            </div>
+        </div>
+
+        <!-- Footer nav -->
+        <div class="text-center py-4" data-aos="fade-up">
+            <a href="index.html#projects" class="doc-link-btn"><i class="bi bi-arrow-left"></i> Back to Projects</a>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
