@@ -62,7 +62,7 @@
             </li>
 
             <li class="nav-item">
-            <a class="nav-link" href="#" data-bs-dismiss="collapse">
+            <a class="nav-link" href="#home" data-bs-dismiss="collapse">
                 <i class="bi bi-person"></i> About
             </a>
             </li>
@@ -75,6 +75,98 @@
         </div>
     </div>
     </nav>
+
+        <!-- HERO / ABOUT ME -->
+    <section id="home" class="hero-section">
+
+        <div class="container">
+
+            <div class="row flex-column-reverse flex-lg-row align-items-center hero-row">
+
+                <!-- TEXT COLUMN -->
+                <div class="col-lg-6" data-aos="fade-right">
+
+                    <div class="hero-panel">
+
+                        <div class="hero-status">
+                            SYSTEM ONLINE
+                        </div>
+
+                        <h1 class="hero-title">
+                            MPHO
+                            <span class="hero-name">NGWENYA</span>
+                        </h1>
+
+                        <div class="hero-typing">
+                            <span id="typed-text"></span>
+                        </div>
+
+                        <p class="hero-description">
+                            Electrical Engineering graduate specializing in Computer Systems.
+                            Passionate about Full-Stack Development, Data Science,
+                            Cloud Computing, Network Configuration and IoT systems.
+
+                            I design and develop intelligent software solutions,
+                            cloud-based applications and embedded systems that solve
+                            real-world problems.
+                        </p>
+
+                        <div class="hero-buttons">
+
+                            <a href="images/CV.pdf"
+                            target="_blank"
+                            class="cyber-btn-primary">
+                                <i class="bi bi-file-earmark-person"></i>
+                                View Resume
+                            </a>
+
+                            <a href="#contact"
+                            class="cyber-btn-secondary">
+                                <i class="bi bi-envelope"></i>
+                                Contact Me
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- IMAGE COLUMN -->
+                <div class="col-lg-6 text-center" data-aos="fade-left">
+
+                    <div class="hero-image-wrapper">
+
+                        <div class="hud-box hud-top">
+                            USER: MPHO_NGWENYA
+                            <br>
+                            LEVEL: ENGINEER
+                        </div>
+
+                        <div class="hud-box hud-middle">
+                            CLOUD: ACTIVE
+                            <br>
+                            NETWORKS: ACTIVE
+                        </div>
+
+                        <div class="hud-box hud-bottom">
+                            FULL STACK: ONLINE
+                        </div>
+
+                        <img src="myPic.png"
+                            alt="Mpho Ngwenya"
+                            class="hero-image">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+</section>
+                  
 
 <!-- Education Section -->
 <section id="education" class="py-5" style="scroll-margin-top: 80px; margin-top: 76px;">
@@ -226,7 +318,7 @@
                             <span class="tech-tag">PIR Motion Sensor</span>
                             <span class="tech-tag">Rainfall Sensor</span>
                         </div>
-                        <a href="Project-IrrigationSystem.html" class="project-link"><i class="bi bi-box-arrow-up-right"></i> View Project</a>
+                        <a href="/Project-IrrigationSystem.html" class="project-link"><i class="bi bi-box-arrow-up-right"></i> View Project</a>
                     </div>
                 </div>
             </div>
@@ -255,7 +347,7 @@
                             <span class="tech-tag">Circuit Analysis</span>
                             <span class="tech-tag">Team Work</span>
                         </div>
-                        <a href="Project-AudioAmp.html" class="project-link"><i class="bi bi-box-arrow-up-right"></i> View Project</a>
+                        <a href="/Project-AudioAmp.html" class="project-link"><i class="bi bi-box-arrow-up-right"></i> View Project</a>
                     </div>
                 </div>
             </div>
@@ -274,5 +366,20 @@
     <!-- Typing Subtitle JS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
+    <script>
+    new Typed("#typed-text", {
+        strings: [
+            "Electrical Engineer",
+            "Full-Stack Web Developer",
+            "Data Scientist",
+            "Cloud Computing",
+            "Network Configuration"
+        ],
+        typeSpeed: 60,
+        backSpeed: 40,
+        backDelay: 1500,
+        loop: true
+    });
+    </script>
 </body>
 </html>
