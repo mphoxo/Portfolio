@@ -665,6 +665,146 @@ body {
     border-color: var(--accent-cyan);
     box-shadow: 0 0 16px var(--glow-cyan);
 }
+/* ===== Skills Section ===== */
+#skills h2 i {
+    color: var(--accent-magenta);
+    text-shadow: 0 0 14px var(--glow-magenta);
+}
+
+.skill-tile {
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    background-color: var(--bg-panel);
+    padding: 1.2rem 0.6rem;
+    text-align: center;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    height: 100%;
+}
+
+.skill-tile i {
+    font-size: 2.2rem;
+    display: block;
+    margin: 0 auto 0.6rem;
+    color: var(--text-primary);
+    transition: color 0.25s ease;
+}
+
+.skill-tile span {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.02em;
+}
+
+.skill-tile:hover {
+    transform: translateY(-4px);
+}
+
+.skill-tile.cat-magenta:hover {
+    border-color: var(--accent-magenta);
+    box-shadow: 0 0 16px var(--glow-magenta);
+}
+.skill-tile.cat-magenta:hover i {
+    color: var(--accent-magenta);
+}
+
+.skill-tile.cat-cyan:hover {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 16px var(--glow-cyan);
+}
+.skill-tile.cat-cyan:hover i {
+    color: var(--accent-cyan);
+}
+/* ===== Footer ===== */
+.site-footer {
+    background-color: var(--bg-panel);
+    border-top: 1px solid var(--border-subtle);
+    padding: 3rem 0 2rem;
+}
+
+.footer-tagline {
+    color: var(--text-muted);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    border: 1px solid var(--border-subtle);
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.social-icon.cat-cyan {
+    color: var(--accent-cyan);
+}
+.social-icon.cat-cyan:hover {
+    background-color: var(--accent-cyan);
+    color: #00131a;
+    box-shadow: 0 0 16px var(--glow-cyan);
+    transform: translateY(-3px);
+}
+
+.social-icon.cat-magenta {
+    color: var(--accent-magenta);
+}
+.social-icon.cat-magenta:hover {
+    background-color: var(--accent-magenta);
+    color: #1a0010;
+    box-shadow: 0 0 16px var(--glow-magenta);
+    transform: translateY(-3px);
+}
+
+.footer-copy {
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+}
+
+/* Scroll to top button */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--accent-cyan);
+    color: var(--accent-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 999;
+    box-shadow: 0 0 12px var(--glow-cyan);
+}
+
+.scroll-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top-btn:hover {
+    background-color: var(--accent-cyan);
+    color: #00131a;
+    box-shadow: 0 0 20px var(--glow-cyan);
+}
 /* ==========================
    HERO MOBILE FIX
 ========================== */
