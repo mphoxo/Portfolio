@@ -206,7 +206,7 @@
         <div class="mb-5" data-aos="fade-up">
             <p class="section-label">Documentation</p>
             <div class="d-flex flex-wrap gap-3">
-                <a href="images/Mpho_Ngwenya_Electronics_Project.pdf" class="doc-link-btn" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf"></i> Full Report (PDF)</a>
+                <a href="docs/Mpho_Ngwenya_Electronics_Project.pdf" class="doc-link-btn" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf"></i> Full Report (PDF)</a>
             </div>
         </div>
 
@@ -215,6 +215,28 @@
             <a href="index.html#projects" class="doc-link-btn"><i class="bi bi-arrow-left"></i> Back to Projects</a>
         </div>
 
+            <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://www.linkedin.com/in/mphongwenya" target="_blank" rel="noopener noreferrer" class="social-icon cat-cyan" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="mphongwenya16@gmail.com" class="social-icon cat-magenta" aria-label="Email">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+                <a href="https://wa.me/27660889769" target="_blank" rel="noopener noreferrer" class="social-icon cat-cyan" aria-label="WhatsApp">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="https://github.com/mphoxo" target="_blank" rel="noopener noreferrer" class="social-icon cat-magenta" aria-label="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+
+            <p class="footer-copy">© 2026 Mpho Ngwenya. All rights reserved.</p>
+        </div>
+    </footer>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
@@ -222,6 +244,22 @@
     <script>
         AOS.init();
     </script>
+    
+    <!-- Scroll Top -->
+    <script>
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
 
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+            scrollTopBtn.classList.add('show');
+        } else {
+            scrollTopBtn.classList.remove('show');
+        }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    </script>
 </body>
 </html>
